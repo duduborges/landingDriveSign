@@ -86,3 +86,8 @@ html {
     transform: translateY(0px);
   }
 }
+
+.form-contact {
+  filter: drop-shadow(2px 8px 20px #1C8ADB);
+  padding-bottom: 90px;
+}
