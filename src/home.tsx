@@ -9,12 +9,9 @@ import {
 import { Navbar } from "flowbite-react";
 import logo from "../Drive_sign_logo_semfundo.png"
 import { useEffect, useState } from "react";
-import sobre from "../sobrenos.jpeg"
-import objetivo from "../objetivo.jpeg"
+import objetivo from "../img/plataforma.png"
 import a from "../img/kit1.png"
 import b from "../img/kit2.png"
-// import c from "../img/kit-sem-nada.png"
-// import d from "../img/kit-sem-nada-c-servico.png"
 import planoBarato from "../img/plano.png"
 import planoCaro from "../img/planoPremium.png"
 import { FaInstagram, FaYoutube } from "react-icons/fa";
@@ -86,41 +83,105 @@ export default function Home() {
         <main className="w-full z-1">
 
             <section id="about">
-                <div className="w-9/12 m-auto flex justify-evenly">
-                    <div className="w-8/12">
+                <div className="w-10/12 m-auto flex justify-evenly">
+                    <div className="w-5/6">
                         <h1 className="text-center text-3xl font-semibold font-mono ">Quem somos?</h1>
                         <p className="text-xl text-justify font-serifl tracking-tighter w-3/4 m-auto">
-                            Nós somos uma equipe apaixonada por tornar o trânsito mais acessível para todos.
-                            Nosso projeto visa melhorar a segurança e a inclusão de pessoas com deficiência auditiva.
-                            Desenvolvemos um aplicativo inovador que se integra com sensores e dispositivos Arduino para
-                            ajudar os usuários a identificar a origem dos sons no trânsito. Acreditamos que a tecnologia pode ser
-                            uma aliada poderosa na busca por um mundo mais inclusivo e seguro para todos.
+                            O DriveSing é uma startup brasileira referência em trânsito inclusivo, dedicada a transformar a mobilidade urbana para pessoas com deficiência auditiva. Nosso compromisso é garantir que todos os motoristas tenham acesso às ferramentas necessárias para uma condução segura e autônoma, independentemente de suas limitações auditivas.
+                            <br /><br />
+                            Nossa equipe é composta por especialistas em tecnologia, designers de experiência do usuário e profissionais de trânsito, todos unidos por um propósito comum: criar soluções inovadoras que promovam a inclusão e a segurança no trânsito. Com base em pesquisas aprofundadas e feedback constante dos usuários, desenvolvemos um aplicativo que converte sinais sonoros de trânsito em alertas visuais, proporcionando uma experiência de direção mais segura e eficiente.
+                            <br /> <br />
+                            No DriveSing, acreditamos que a tecnologia pode e deve ser um facilitador da igualdade. Por isso, estamos sempre em busca de novas maneiras de melhorar a acessibilidade e a comunicação no trânsito, visando uma sociedade onde todos possam se deslocar com confiança e segurança. Junte-se a nós nessa jornada e experimente a diferença que a mobilidade inclusiva pode fazer.
                         </p>
                     </div>
                     <div>
-                        <img src={sobre} className="bg-white w-[25em] rounded-md h-[25rem]" alt="Foto da equipe" />
+                        <img src={logo} className=" w-full rounded-md h-[25rem]" alt="Foto da equipe" />
                     </div>
                 </div>
             </section>
 
             <section >
 
-                <div className="w-9/12 m-auto my-11 flex justify-evenly">
-                    <div>
-                        <img src={objetivo} className="w-[25em] h-[25rem] rounded-md bg-white" alt="Foto da equipe" />
+                <div className="w-10/12 m-auto my-11 flex justify-evenly">
+                    <div className="flex items-center">
+                        <img src={objetivo} className="w-[25em] h-[25rem] rounded-md  " alt="Foto da equipe" />
                     </div>
-                    <div className="w-8/12">
-                        <h1 className="text-center text-3xl font-semibold font-mono ">Nosso objetivo</h1>
-                        <p className="text-xl font-serifl text-justify tracking-tighter w-3/4 m-auto">
-                            Estamos comprometidos em aprimorar constantemente nosso aplicativo e expandir sua funcionalidade. Além de identificar a origem
-                            dos sons no trânsito, estamos explorando maneiras de fornecer informações em tempo real sobre semáforos, obstáculos e condições
-                            de tráfego. Queremos que nosso aplicativo seja uma ferramenta completa para a comunidade, capacitando todos a se movimentarem
-                            com segurança e confiança. Se você compartilha de nossa paixão pela acessibilidade e segurança no trânsito, junte-se a nós!
-                            Estamos sempre abertos a novas ideias, colaborações e parcerias. Entre em contato conosco e faça parte dessa missão.
+                    <div className="w-4/6">
+                        <h1 className="text-center text-3xl font-semibold font-mono ">Plataforma DriveSign</h1>
+                        <p className="text-xl font-serifl  tracking-tighter w-10/12 m-auto">
+                            Garanta segurança e autonomia no trânsito,
+                            transformando sons em imagens. Experimente a
+                            mobilidade inclusiva e dirija com confiança.
+                            Nosso aplicativo converte sinais sonoros de trânsito,
+                            como sirenes, buzinas e alarmes, em alertas visuais
+                            claros e instantâneos, garantindo que motoristas com
+                            deficiência auditiva possam dirigir com segurança
                         </p>
+                        <br />
+                        <p className="text-md font-bold font-serifl  tracking-tighter w-10/12 m-auto">
+                            Nosso aplicativo converte sinais sonoros de trânsito,
+                            como sirenes, buzinas e alarmes, em alertas visuais
+                            claros e instantâneos, garantindo que motoristas com
+                            deficiência auditiva possam dirigir com segurança
+                        </p>
+                        <div className="w-3/4 m-auto flex flex-col justify-start items-center mt-4">
+                            <button className="bg-yellow-300 p-4 rounded-xl text-xl my-2 text-black" onClick={() => alert("Em breve...")}>Baixar o app</button>
+                            <button className="bg-yellow-300 p-4 rounded-xl text-xl my-2 text-black" onClick={() => alert("Em breve...")}>Planos a partir de R$24,90</button>
+                            <button className="bg-yellow-300 p-4 rounded-xl text-xl my-2 text-black" onClick={() => alert("Em breve...")}>Faça um teste gratuito por 7 dias</button>
+                        </div>
                     </div>
 
                 </div>
+            </section>
+
+            <section className="w-10/12 m-auto my-11 flex flex-col ">
+                <div>
+                    <h2 className="text-center text-3xl font-semibold font-mono">Nosso propósito</h2>
+                    <p className="w-3/4 m-auto">Nosso propósito é transformar a mobilidade urbana, tornando-a acessível e segura para todos.
+                        Queremos criar um ambiente onde cada motorista possa dirigir com confiança, independente de suas limitações.</p>
+                </div>
+                <div className="flex w-[91%] justify-between mt-8 align-top m-auto">
+                    <div className="w-1/3 mx-auto flex flex-col gap-4 align-top">
+                        <div className="align-top">
+                            <h2 className="text-3xl font-bold font-mono">Missão</h2>
+                            <p>Nossa missão é desenvolver e implementar tecnologias inovadoras que promovam a inclusão e a segurança no trânsito,
+                                garantindo que motoristas com deficiência auditiva possam se deslocar com autonomia e segurança.</p>
+                        </div>
+                        <div className="">
+                            <h2 className="text-3xl font-bold font-mono">Visão</h2>
+                            <p>Ser referência global em soluções de trânsito inclusivo, revolucionando a forma como pessoas com deficiência auditiva
+                                interagem com o ambiente urbano, criando um mundo onde a mobilidade seja um direito acessível a todos, sem exceções.</p>
+                        </div>
+                    </div>
+                    <div className="w-1/3 m-auto flex flex-col items-start  ">
+                        <h2 className="text-3xl text-center font-bold font-mono">Valores</h2>
+                        <div className="mb-4 mt-2">
+                            <p className="font-bold underline text-[19px]">Inclusão</p>
+                            <p>Igualdade de oportunidades para todos.</p>
+                        </div>
+                        <div className="mb-4">
+                            <p className="font-bold underline text-[19px]">Inovação</p>
+                            <p>Busca constante por novas tecnologias.</p>
+                        </div>
+                        <div className="mb-4">
+                            <p className="font-bold underline text-[19px]">Segurança</p>
+                            <p>Prioridade à segurança dos usuários.</p>
+                        </div>
+                        <div className="mb-4">
+                            <p className="font-bold underline text-[19px]">Compromisso</p>
+                            <p>Excelência e satisfação do cliente.</p>
+                        </div>
+                        <div className="mb-4">
+                            <p className="font-bold underline text-[19px]">Responsabilidade Social</p>
+                            <p>Ética e contribuição para uma sociedade justa.</p>
+                        </div>
+                        <div className="mb-4">
+                            <p className="font-bold underline text-[19px]">Colaboração</p>
+                            <p>Trabalho em equipe e parcerias eficazes.</p>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section id="plans" className="pt-10 pb-10">
@@ -130,18 +191,19 @@ export default function Home() {
                 <div className="flex justify-evenly w-10/12 m-auto">
                     <div className="flex flex-col cursor-pointer w-1/3 m-auto justify-center align-middle items-center">
                         <div className="w-96 py-5 minhaimg"><img className="shadoww h-1/5" src={planoBarato} alt="" /></div>
-                        <div className="text-center lexend-tera w-full "><p className="text-2xl">Plano BASIC</p><p className="text-xl text-green-300">R$ 39,90/Mes</p>
+                        <div className="text-center lexend-tera w-full "><p className="text-2xl">Plano BASIC</p><p className="text-xl text-green-300">R$ 24,90/Mes</p>
                             <p className="text-sm text-left mt-2">Benefícios: <p>Detectar sensores, ligações diretamente do aplicativo, gravações do trajeto</p> </p>
                         </div>
                     </div>
                     <div className="flex flex-col cursor-pointer w-1/3 m-auto justify-center align-middle items-center">
                         <div className="w-96 py-7 minhaimg"><img className="shadoww h-1/5" src={planoCaro} alt="" /></div>
-                        <div className="  lexend-tera w-full text-center "><p className="text-2xl">Plano PREMIUM</p><p className="text-xl text-green-300">R$ 59,90/Mes</p>
+                        <div className="  lexend-tera w-full text-center "><p className="text-2xl">Plano PREMIUM</p><p className="text-xl text-green-300">R$ 39,90/Mes</p>
                             <p className="text-sm text-left mt-2">Beneficios: <p>Detectar sensores, ligações diretamente do aplicativo, gravações do trajeto, manual em libras, guia de manutenção</p></p>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             <section id="product">
                 <Carousel className="pb-32 pt-10  w-10/12 m-auto">
@@ -180,9 +242,6 @@ export default function Home() {
                     <CarouselNext></CarouselNext>
                 </Carousel>
             </section>
-
-
-
         </main>
         <footer id="contato" className="bg-white text-black">
             <section className="pt-5">
